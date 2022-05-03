@@ -1,0 +1,9 @@
+---
+- hosts: all
+  user : root
+  gather_facts : false
+  tasks:
+    - name: copy_task
+      copy:
+        src: /root/ansible
+        dest: /home/centos/
